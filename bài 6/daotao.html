@@ -54,6 +54,7 @@
         input{
             width: 100%;
             padding:5px ;
+            border-radius: 5px;
             
         }
         .quen-mat-khau{
@@ -65,15 +66,49 @@
             color: #1f89e5;
             
         }
-       
-        .tin{
+         .tin{
             width: 95%;
             height: 100px;
-            margin: 30px auto;
-            border: 1px solid #1f89e5; 
+            margin: 20px auto;
+            border: 1px solid #198cf0;
             border-radius: 10px;
         }
-    </style>
+        button{
+            margin-bottom: 10px;
+            width: 100%;
+        }
+         .login{
+            background-color: #1992d7;
+            color: white;
+        }
+
+        .login-365{
+            background-color: #0078d4;
+            color: white;
+        }
+
+        .chuc-nang{
+            width: 95%;
+            margin: 5px auto;
+            padding: 5px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1PX solid #198cf0;
+        }
+
+        .tieu-de{
+            font-weight: bold;
+            font-family: "Roboto", sans-serif;
+            text-decoration: none;
+        }
+
+        .xem-tiep{
+            color: #198cf0;
+            font-family: "Roboto", sans-serif
+            text-decoration: none;
+        }
+        
+        </style>
     
 </head>
 <body>
@@ -97,19 +132,20 @@
                     <div class="quen-mat-khau">
                         <a href="#" class="quen-mk"><p>Quên mật khẩu</p></a>
                     </div>
-                    <button>Đăng nhập</button><br>
-                    <button>Đăng nhập với microsoft</button>
+                    <button class="login">Đăng nhập</button><br>
+                    <button class="login-365">Đăng nhập với microsoft</button>
                 </form>
             </div>
             
         </div>
-        <div class="phai">
-             <div class="danh-sach-tin">
+         <div class="phai"> 
+            <div class="danh-sach-tin">
                 <div class="tin">
                     <div class="chuc-nang">
-                        <div class="tieu-de">Tin tức</div>
-                        <div class="xem-tiep"><a class="lien-ket-xem-tiep"></div>
+                        <div class="tieu-de" >Tin tức</div>
+                        <div class="xem-tiep"><a class="lien-ket-xem-tiep"> Xem tiếp</a> </div>
                     </div>
+
                 </div>
             </div>
         </div>
