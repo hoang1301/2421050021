@@ -15,15 +15,16 @@
 
         .danh-muc{
             display: flex;
-            background-color:#1f89e5;
+            background-color:#2FA4E7;
             list-style: none;
             margin: 0;
             padding: 0;
             gap: 20px;
+            height: 50px;
         }
         .trai{
             width: 20%;
-            height: 1000px;
+            height: auto;
             border-right:2px solid #1f89e5 ;
         }
         .phai{
@@ -36,7 +37,7 @@
         .khoi-dang-nhap{
             
             width: 100%;
-            height: 500px;
+            height:auto;
         }
         form{
             width: 80%;
@@ -46,6 +47,8 @@
             width: 100%;
             padding:5px ;
             border-radius: 5px;
+            border: 1px solid #CED4DA;
+            height: 20px;
             
         }
         .quen-mat-khau{
@@ -59,7 +62,7 @@
         }
          .tin{
             width: 95%;
-            height: 100px;
+            height: auto;
             margin: 20px auto;
             border: 1px solid #198cf0;
             border-radius: 10px;
@@ -67,15 +70,23 @@
         button{
             margin-bottom: 10px;
             width: 100%;
+            border: 1px solid #1f89e5;
         }
          .login{
-            background-color: #1992d7;
+            background-color: #259FE6;
+            border: 1px solid none;
+            border-radius: 5px;
             color: white;
+             height: 30px;
+            
         }
 
         .login-365{
-            background-color: #0078d4;
+            background-color: #59A7E3;
             color: white;
+            border: 1px solid none;
+            border-radius: 5px;
+            height: 30px;
         }
 
         .chuc-nang{
@@ -88,7 +99,7 @@
         }
 
         .tieu-de{
-            font-weight: bold;
+            
             font-family: "Roboto", sans-serif;
             text-decoration: none;
         }
@@ -98,4 +109,83 @@
             font-family: "Roboto", sans-serif
             text-decoration:none;
         }
+        .ds-box{
+            margin-left: 30px;
+            display: flex;
+            gap: 20px;
+        }
+        .box{
+        border: 1px solid none;
+        border-radius: 5px;
+        height: 300px;
+        width: 25%;
+        margin: 10px 0 10px 0;
         
+        }
+        .anh{
+            width: 100%;
+            height: 70%;
+            object-fit: cover;
+            border: 1px solid none;
+            border-radius: 5px;
+        }
+        .box a{
+            text-decoration: none;
+            font-size: 13px;
+            color: #495057;
+        }
+        .ngay{
+            text-align: right;
+            margin: 0;
+            color: #868e96;
+            font-size: 13px;
+        }
+        .phai-tb{
+            width: 50%;
+            border-left: 1px solid #E9E9E9;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .text-tb{
+            margin-left: 10px;
+            font-size: 13px;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #868e96;
+            margin: 0 30px 0px 20px;
+            height: auto;
+
+        }
+        .ngay-tb{
+            margin-right: 30px;
+        }
+        .text-tb a{
+            color: #495057;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .qr-play{
+            width: 50%;
+        }
+        .ch-play{
+            display: flex;
+            justify-content: center;
+        }
+        .chua-qr{
+            display: flex;
+        }
+        .menu{
+            width: 100%;
+            
+        }
+        .trang-chu{
+            margin-top: 10px;
+            width: 85%;
+            border-bottom: 1px solid #2FA4E7;
+            margin-left: 20px;
+            height: 30px;
+            color: #2fa4e7;
+        }
+        .cuoi-trai{
+            
+        }
