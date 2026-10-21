@@ -1,1 +1,0 @@
- document.writeln("<br>hello world")
