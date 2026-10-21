@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+       
+        function tinhdiem() {
+            var a = Number(document.getElementById("diem-a").value);
+            var b = Number(document.getElementById("diem-b").value);
+            var c = Number(document.getElementById("diem-c").value);
+            document.getElementById("ket-qua").value = tinhDiemChu(a, b, c);
+        }
+
+        function tinhDiemChu(a, b, c) {
+            var tong = a * 0.6 + b * 0.3 + c * 0.1;
+            var diemChu = "";
+
+        if (tong >= 9) {
+                diemChu = "A+";
+        } else if (tong >= 8.5) {
+            diemChu = "A";
+            } else if (tong >= 8) {
+                diemChu = "B+";
+            } else if (tong >= 7) {
+                diemChu = "B";
+            } else if (tong >= 6) {
+                diemChu = "C+";
+            } else if (tong >= 5.0) {
+                diemChu = "D+";
+            } else if (tong >= 4.0) {
+                diemChu = "D";
+            } else {
+                diemChu = "F";
+            }
+
+            return "Điểm tổng kết: " + tong + " - Điểm chữ: " + diemChu;
+        }
+        function tinhNam(){
+            var namSinh = Number(document.getElementById("namSinh").value);
+            document.getElementById("ket-qua2").value = tinhTuoi(namSinh);
+           
+            
+        }
+        function tinhTuoi(namSinh){
+            var namnay=new Date();
+            var tuoi=namnay.getFullYear()-namSinh;
+            return tuoi;
+            
+        }
+    </script>
+    <div id="nhap-a">
+        <div>nhap diem a</div>
+        <input type="number" name="" id="diem-a">
+    </div>
+    <div id="nhap-b">
+        <div>nhap diem b</div>
+        <input type="number" name="" id="diem-b">
+    </div>
+    <div id="nhap-c">
+        <div>nhap diem c</div>
+        <input type="number" name="" id="diem-c">
+    </div>
+    <button type="button" onclick="tinhdiem()">
+        tinh diem
+    </button>
+    <br>
+    <textarea id="ket-qua"></textarea>
+    <div>
+        <div>nhap nam sinh</div>
+        <input type="number" name="" id="namSinh">
+    </div>
+    <button onclick="tinhNam()">tinh tuoi</button>
+    <br>
+    <textarea id="ket-qua2"></textarea>
+   
+</body>
+</html>

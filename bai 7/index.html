@@ -37,8 +37,165 @@
         document.writeln(bien.startsWith("NGUYEN")+"<br>")
         document.writeln(bien.replace("NGUYEN","DO")+"<br>")
         document.writeln(bien.toLowerCase())
+        //Date
+        var homnay=new Date()
+        document.writeln("<br>"+homnay+"<br>")
+        var ngay=new Date("01/13/2006")
+        document.writeln("<br>"+ngay+"<br>")
+        document.writeln(homnay.getFullYear()+"<br>")
+        document.writeln(homnay.getMonth()+"<br>")
+        document.writeln(homnay.getDay()+"<br>")
+        document.writeln(homnay.getDate()+"<br>")   
+        document.writeln("hom nay la ngay "+(homnay.getDate())+" thu "+(homnay.getDay()+1)+" nam "+homnay.getFullYear())
+        document.writeln("<br>")
+        //Array
+        var mang=["mot","hai","ba",4]
+        var so=[1,2,3,4]
+        document.writeln(mang[0]+"<br>")
+        document.writeln(mang.length+"<br>")
+        var d=mang.concat(so)
+        document.writeln(d+"<br>")
+        //ngan cach nhau va thanh chuoi
+        document.writeln(d.join("-")+"<br>")
+        //lay phan tu cuoi cua mang
+        document.writeln(d.pop()+"<br>")
+        d.push("hoang")
+        document.writeln(d+"<br>")
+        // dao nguoc
+        document.writeln(so.reverse())
+
+
+        // OBJECT
+        var thongtin ={
+            ten:"hoang1",
+            ngaysinh:"13/01/2006",
+            quequan:{
+                thanhpho:"bac ninh",
+                phuong:"bac giang",
+            }
+        }
+         var thongtin1 ={
+            ten:"hoang2",
+            ngaysinh:"13/01/2006",
+            quequan:{
+                thanhpho:"bac ninh",
+                phuong:"bac giang",
+            }
+        }
+         var thongtin2 ={
+            ten:"hoang3",
+            ngaysinh:"13/01/2006",
+            quequan:{
+                thanhpho:"bac ninh",
+                phuong:"bac giang",
+            }
+        }
+       document.writeln(thongtin.quequan.thanhpho)
+      
+       document.writeln(thongtin.tuoii)
+       
+       console.log(thongtin)
+
+        // document.writeln("<br>")
+        // var somot=1
+        // var sohai="1"
+        // document.writeln(somot==sohai)
+        //  document.writeln(homnay.getDay())
+        // if((homnay.getDay()+1)<=6){
+        //     document.writeln("di hoc")
+        // }
+        // else{
+        //     document.writeln("khong di hoc")
+        // }
+        // var sokt=13
+        // if(sokt%2==0){
+        //     document.writeln("<br> so chan")
+        // }
+        // else{
+        //     document.writeln("<br> so le")
+        // }
+        // document.writeln("<br>")
+        // var thu=6
+        // switch(thu){
+        //     case 5:
+        //         document.writeln("thu 5")
+        //     default:
+        //         document.writeln("chiu")
+        // }
+        // for(var i = 1; i <= 10; i = i + 1){
+        //     document.writeln(i + "<br>")
+        // }
+        // for(var i = 0; i < mang.length; i = i + 1){
+        //     document.writeln(mang[i] + "<br>")
+        // }
+        // var mangMot = [1, 2, 3, 4, 5, "Mot", "Hai"]
+        // for(var i = 0; i < mangMot.length; i = i + 1){
+        //     if(!isNaN(mangMot[i])){
+        //         document.writeln(mangMot[i] + "<br>")
+        //     }
+           
+        // }
+        // function tong(mot,hai){
+        //     var tongg = Number(mot) + Number(hai)
+        //     document.writeln("tong:" + tongg + "<br>")
+        // }
         
+        // alert("xin chao")
+        // var i = prompt("nhap ngay sinh")
+        // var bienMot = prompt("nhap so dau")
+        // var bienHai = prompt("nhap so hai")
+        // if(!isNaN(bienMot) &&  !isNaN(bienHai)){
+        //     tong(bienMot,bienHai)
+        // }
+    //     document.writeln("<br>")
+    // function tinhDiemChu (a, b, c) {
+    //     var tong = a * 0.6 + b * 0.3 + c * 0.1;
+    //     var diemChu = "";
+
+    //     if (tong >= 9) {
+    //         diemChu = "A+";
+    //     } else if (tong >= 8.5) {
+    //         diemChu = "A";
+    //     } else if (tong >= 8) {
+    //         diemChu = "B+";
+    //     } else if (tong >= 7) {
+    //         diemChu = "B";
+    //     } else if (tong >= 6) {
+    //         diemChu = "C+";
+    //     } else if (tong >= 5.0) {
+    //         diemChu = "D+";
+    //     } else if (tong >= 4.0) {
+    //         diemChu = "D";
+    //     } else {
+    //         diemChu = "F";
+    //     }
+
+    //     document.writeln("Điểm tổng kết: " + tong + "<br>");
+    //     document.writeln("Điểm chữ: " + diemChu + "<br>");
+    //     }
+    // var a = Number(prompt("Nhập điểm A (Cuối kỳ):", "0"));
+    // var b = Number(prompt("Nhập điểm B (Giữa kỳ):", "0"));
+    // var c = Number(prompt("Nhập điểm C (Chuyên cần):", "0"));
+
+    // if (!isNaN(a) && !isNaN(b) && !isNaN(c)) {
+    //     tinhDiemChu(a, b, c);
+    // } else {
+    //     document.writeln("Vui lòng nhập điểm là số hợp lệ!");
+    // }   
     </script>
     <script src="java.js"></script>
+    <div id="nhap-a">
+        <div>nhap diem a</div>
+        <input type="number" name="" id="">
+    </div>
+    <div id="nhap-b">
+        <div>nhap diem b</div>
+        <input type="number" name="" id="">
+    </div>
+    <div id="nhap-c">
+        <div>nhap diem c</div>
+        <input type="number" name="" id="">
+    </div>
 </body>
+
 </html>
