@@ -50,15 +50,27 @@ header{
     align-items: center;
     font-size: 13px;
 }
+.trailer{
+    display: none;
+    width: 95%;
+    height: 900px;
+    margin: 20px auto;
+    border: 0;
+    border-radius: 20px;
+}
 .banner{
     background-color: aliceblue;
+    display: flex;
+    justify-content: center;
     width: 95%;
+    padding: 0;
     height: 900px;
     margin: 20px auto;
     border-radius: 20px;
 }
 .anh-banner{
     width: 100%;
+    display: block;
     height: 900px;
     border-radius: 20px;
 }
@@ -96,6 +108,7 @@ footer{
     display: flex;
     justify-content: center;
 }
+
 .gioi-thieu{
     display: flex;
 }

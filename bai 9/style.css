@@ -1,0 +1,18 @@
+.mat-troi{
+    width: 500px;
+    height: 500px;
+}
+
+.khoi-chua{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.nut{
+    width: 200px;
+}
+body{
+    height: 10000px;
+    
+}

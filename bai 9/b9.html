@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="khoi-chua">
+        <h1 class="chu">che do sang</h1>
+        <img src="mattroi.png" alt="" class="mat-troi">
+        <div>
+            <button class="nut" onclick="doimau()">doi che do</button>
+        </div>
+
+    </div>
+    <script>
+        var chedo=true;
+         function doimau() {
+        var body = document.body;
+        var chu = document.getElementsByClassName("chu")[0];
+        var anh = document.getElementsByTagName("img")[0];
+
+        if (chedo) {
+            body.style.backgroundColor = "black";
+            chu.style.color = "white";
+            chu.textContent = "che do toi";
+            anh.src = "mattrang.png";
+            chedo = false;
+        } else {
+            body.style.backgroundColor = "white";
+            chu.style.color = "black";
+            chu.textContent = "che do sang";
+            anh.src = "mattroi.png";
+            chedo = true;
+        }
+    }
+       
+    </script>
+</body>
+</html>
