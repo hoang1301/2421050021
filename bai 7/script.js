@@ -2,7 +2,7 @@ var videoList = [
     { id: 0, link: "https://www.youtube.com/embed/MTDqG8ZKDuI?si=7Lc0kSgVz34CcsMS", namevideo:"mot" },
     { id: 1, link: "https://www.youtube.com/embed/bE2rrcUKnok?si=JdPVhaM3_fxbqFVx" ,namevideo:"hai"},
     { id: 2, link: "https://www.youtube.com/embed/dH8sbGnmfZo?si=idaj1ZazLpUBXoN2" ,namevideo:"ba"},
-    { id: 3, link: "https://www.youtube.com/embed/IjFa_UDzNrc?si=8--2luC3MCF0_6J3" ,namevideo:"bon"}
+    { id: 3, link: "https://www.youtube.com/embed/IjFa_UDzNrc?si=8--2luC3MCF0_6J3", namevideo: "bon" }
 ];
 
 function changeVideo(id) {
