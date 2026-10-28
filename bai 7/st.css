@@ -1,0 +1,43 @@
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background: #111;
+    padding: 20px;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    width: 2310px;
+    height: 1000px;
+    margin: 0 auto;
+    border-radius: 20px;
+    
+}
+
+.anh-banner {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.phim {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    width: 100%;
+}
+
+.anh-phim {
+    
+    width: 500px;
+    height: 350px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    object-fit: cover;
+}
